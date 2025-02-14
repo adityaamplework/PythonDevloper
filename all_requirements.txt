@@ -1,0 +1,8 @@
+langchain_community
+langchain-ollama
+python-dotenv
+sentence_transformers
+langchain_huggingface
+faiss-cpu
+langchain
+chromadb
