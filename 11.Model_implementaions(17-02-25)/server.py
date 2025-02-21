@@ -26,16 +26,4 @@ paser=StrOutputParser()
 
 chain=prompt|model|paser
 
-app=FastAPI(title="This is my Langchain Server",
-            version="1.0",
-            description="A simple API server using Lnagchain interfaces")
-
-add_routes(
-    app,
-    chain,
-    path="/chain"
-)
-
-if __name__=="__main__":
-    import uvicorn
-    uvicorn.run(app)
+chain.invoke({"text":"my name is aditya","language":"hindi"})
